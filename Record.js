@@ -9,10 +9,14 @@
  */
 
 /**
+ * @typedef {'bullying' | 'cheating' | 'disruptive_behavior' | 'fraud' | 'gambling' | 'harassment' | 'improper_uniform' | 'littering' | 'plagiarism' | 'prohibited_items' | 'vandalism' | 'other'} ViolationType
+ */
+
+/**
  * @typedef {{
  * 	id: Number | String,
  * 	title: String,
- * 	violation: String,
+ * 	violations: ViolationType[],
  * 	description: String,
  * 	tags: {
  * 		status: RecordStatus,
@@ -32,7 +36,7 @@ class Record {
 	constructor({
 		id = Math.floor(Math.random() * 1000000),
 		title,
-		violation,
+		violations,
 		description,
 		tags: {
 			status,
@@ -47,7 +51,7 @@ class Record {
 		// Initialize the record properties
 		this.id = id;
 		this.title = title;
-		this.violation = violation;
+		this.violations = violations;
 		this.description = description;
 		this.tags = {
 			status,
