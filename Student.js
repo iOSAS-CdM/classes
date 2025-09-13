@@ -7,23 +7,23 @@
 /**
  * @typedef {{
  * 	name: {
- * 		first: String,
- * 		middle: String,
- * 		last: String
+ * 		first: string,
+ * 		middle: string,
+ * 		last: string
  * 	},
  * 	role: 'student' | 'unverified-student',
- * 	email: String,
- * 	phone: String,
- * 	id: String,
- * 	profilePicture?: String,
+ * 	email: string,
+ * 	phone: string,
+ * 	id: string,
+ * 	profilePicture?: string,
  * 	status?: 'active' | 'restricted' | 'archived',
  * 	organizations?: import('./Organization').OrganizationProps[],
  * }} BaseStudentProps
  */
 
-/** @typedef {BaseStudentProps & { institute: 'ics', program: ICSPrograms, year: Number }} ICSStudent */
-/** @typedef {BaseStudentProps & { institute: 'ite', program: ITEPrograms, year: Number }} ITEStudent */
-/** @typedef {BaseStudentProps & { institute: 'ibe', program: IBEPrograms, year: Number }} IBEStudent */
+/** @typedef {BaseStudentProps & { institute: 'ics', program: ICSPrograms, year: number }} ICSStudent */
+/** @typedef {BaseStudentProps & { institute: 'ite', program: ITEPrograms, year: number }} ITEStudent */
+/** @typedef {BaseStudentProps & { institute: 'ibe', program: IBEPrograms, year: number }} IBEStudent */
 
 /** @typedef {ICSStudent | ITEStudent | IBEStudent} StudentProps */
 

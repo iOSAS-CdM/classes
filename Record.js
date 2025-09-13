@@ -3,8 +3,8 @@
 
 /**
  * @typedef {{
- * 	occurrence: Number,
- * 	id: String
+ * 	occurrence: number,
+ * 	id: string
  * }} RecordComplainanee
  */
 
@@ -14,20 +14,20 @@
 
 /**
  * @typedef {{
- * 	id: Number | String,
- * 	title: String,
+ * 	id: number | string,
+ * 	title: string,
  * 	violations: ViolationType[],
- * 	description: String,
+ * 	description: string,
  * 	tags: {
  * 		status: RecordStatus,
  * 		severity: RecordSeverity,
- * 		progress: Number
+ * 		progress: number
  * 	},
- * 	complainants: import('./Student').StudentProps[],
+ * 	complainants: string[],
  * 	complainees: RecordComplainanee[],
  * 	date: Date,
- * 	author: String,
- * 	coauthors: String[]
+ * 	author: string,
+ * 	coauthors: string[]
  * }} RecordProps
  */
 
