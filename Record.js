@@ -27,7 +27,8 @@
  * 	complainees: RecordComplainanee[],
  * 	date: Date,
  * 	author: string,
- * 	coauthors: string[]
+ * 	coauthors: string[],
+ * 	repository?: string
  * }} RecordProps
  */
 
