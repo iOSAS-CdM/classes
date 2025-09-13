@@ -4,7 +4,7 @@
 /**
  * @typedef {{
  * 	occurrence: Number,
- * 	student: import('./Student').StudentProps
+ * 	id: String
  * }} RecordComplainanee
  */
 
@@ -25,7 +25,9 @@
  * 	},
  * 	complainants: import('./Student').StudentProps[],
  * 	complainees: RecordComplainanee[],
- * 	date: Date
+ * 	date: Date,
+ * 	author: String,
+ * 	coauthors: String[]
  * }} RecordProps
  */
 
