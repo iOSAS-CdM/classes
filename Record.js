@@ -1,5 +1,6 @@
 /** @typedef {'ongoing' | 'resolved' | 'archived'} RecordStatus */
 /** @typedef {'minor' | 'major' | 'severe'} RecordSeverity */
+/** @typedef {'bullying' | 'cheating' | 'disruptive_behavior' | 'fraud' | 'gambling' | 'harassment' | 'improper_uniform' | 'littering' | 'plagiarism' | 'prohibited_items' | 'vandalism' | 'other'} RecordViolation */
 
 /**
  * @typedef {{
@@ -12,7 +13,7 @@
  * @typedef {{
  * 	id: number | string,
  * 	title: string,
- * 	violation: 'bullying' | 'cheating' | 'disruptive_behavior' | 'fraud' | 'gambling' | 'harassment' | 'improper_uniform' | 'littering' | 'plagiarism' | 'prohibited_items' | 'vandalism' | 'other',
+ * 	violation: RecordViolation,
  * 	description: string,
  * 	tags: {
  * 		status: RecordStatus,
@@ -20,7 +21,7 @@
  * 		progress: number
  * 	},
  * 	complainants: string[],
- * 	complainees: RecordComplainanee[],
+ * 	complainees: RecordComplainanee[] | string[],
  * 	date: Date,
  * 	author: string,
  * 	coauthors: string[],
@@ -45,7 +46,10 @@ class Record {
 		complainants = [],
 		complainees = [],
 		date = new Date(new Date().getFullYear(), new Date().getMonth(), new
-			Date().getDate() - (Math.floor(Math.random() * 10) + 1))
+			Date().getDate() - (Math.floor(Math.random() * 10) + 1)),
+		author,
+		coauthors = [],
+		repository
 	}) {
 		// Initialize the record properties
 		this.id = id;
@@ -60,6 +64,9 @@ class Record {
 		this.complainants = complainants;
 		this.complainees = complainees;
 		this.date = date;
+		this.author = author;
+		this.coauthors = coauthors;
+		this.repository = repository;
 	};
 };
 
