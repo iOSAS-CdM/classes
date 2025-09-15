@@ -3,7 +3,7 @@
 
 /**
  * @typedef {{
- * 	occurrence: number,
+ * 	occurrences: number,
  * 	id: string
  * }} RecordComplainanee
  */
