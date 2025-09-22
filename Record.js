@@ -5,7 +5,8 @@
 /**
  * @typedef {{
  * 	occurrences: number,
- * 	id: string
+ * 	id: string,
+ * 	student?: import('./Student').Student
  * }} RecordComplainanee
  */
 
@@ -20,11 +21,11 @@
  * 		severity: RecordSeverity,
  * 		progress: number
  * 	},
- * 	complainants: string[],
+ * 	complainants: string[] | import('./Student').Student[],
  * 	complainees: RecordComplainanee[] | string[],
  * 	date: Date,
- * 	author: string,
- * 	coauthors: string[],
+ * 	author: string | import('./Student').Staff,
+ * 	coauthors: string[] | import('./Student').Staff[],
  * 	repository?: string
  * }} RecordProps
  */
