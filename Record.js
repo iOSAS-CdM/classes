@@ -21,13 +21,34 @@
  * 		severity: RecordSeverity,
  * 		progress: number
  * 	},
- * 	complainants: string[] | import('./Student').Student[],
- * 	complainees: RecordComplainanee[] | string[],
  * 	date: Date,
- * 	author: string | import('./Student').Staff,
- * 	coauthors: string[] | import('./Student').Staff[],
  * 	repository?: string
- * }} RecordProps
+ * }} BaseRecordProps
+ */
+
+/**
+ * @typedef {{
+ * 	complainants: string[],
+ * 	complainees: string[],
+ * 	author: string,
+ * 	coauthors: string[],
+ * 	repository?: string,
+ * 	raw: true
+ * }} RecordRaw
+ */
+
+/**
+ * @typedef {{
+ * 	complainants: import('./Student').Student[],
+ * 	complainees: RecordComplainanee[],
+ * 	author: import('./Student').Staff,
+ * 	coauthors: import('./Student').Staff[],
+ * 	raw: false
+ * }} RecordProcessed
+ */
+
+/**
+ * @typedef {BaseRecordProps & (RecordRaw | RecordProcessed)} RecordProps
  */
 
 class Record {
@@ -35,39 +56,31 @@ class Record {
 	 * @param {RecordProps} props
 	 */
 	constructor({
-		id = Math.floor(Math.random() * 1000000),
+		id,
 		title,
 		violation,
 		description,
-		tags: {
-			status,
-			severity,
-			progress = 0
-		},
-		complainants = [],
-		complainees = [],
-		date = new Date(new Date().getFullYear(), new Date().getMonth(), new
-			Date().getDate() - (Math.floor(Math.random() * 10) + 1)),
+		tags,
+		date,
+		complainants,
+		complainees,
 		author,
-		coauthors = [],
-		repository
+		coauthors,
+		repository,
+		raw = false
 	}) {
-		// Initialize the record properties
 		this.id = id;
 		this.title = title;
 		this.violation = violation;
 		this.description = description;
-		this.tags = {
-			status,
-			severity,
-			progress
-		};
+		this.tags = tags;
+		this.date = new Date(date);
 		this.complainants = complainants;
 		this.complainees = complainees;
-		this.date = date;
 		this.author = author;
 		this.coauthors = coauthors;
 		this.repository = repository;
+		this.raw = raw;
 	};
 };
 
