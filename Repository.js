@@ -16,7 +16,8 @@
  * 	name: string,
  * 	createdAt: Date,
  * 	updatedAt: Date,
- * 	publicUrl: string
+ * 	publicUrl: string,
+ * 	metadata: Metadata
  * }} File
  */
 
