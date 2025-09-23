@@ -16,7 +16,7 @@
  * 	phone: string,
  * 	id: string,
  * 	profilePicture?: string,
- * 	status?: 'active' | 'restricted' | 'archived',
+ * 	status?: 'active' | 'restricted' | 'dismissed',
  * 	organizations?: import('./Organization').OrganizationProps[],
  * }} BaseStudentProps
  */

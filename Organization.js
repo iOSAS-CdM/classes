@@ -14,7 +14,7 @@
  * 	email: string,
  * 	logo?: string,
  * 	cover?: string,
- * 	status?: 'active' | 'restricted' | 'archived',
+ * 	status?: 'active' | 'restricted' | 'dismissed',
  * 	type?: 'college-wide' | 'institute-wide',
  * 	members?: OrganizationMember[],
  * }} Organization

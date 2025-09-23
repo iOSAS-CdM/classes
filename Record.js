@@ -1,4 +1,4 @@
-/** @typedef {'ongoing' | 'resolved' | 'archived'} RecordStatus */
+/** @typedef {'ongoing' | 'resolved' | 'dismissed'} RecordStatus */
 /** @typedef {'minor' | 'major' | 'severe'} RecordSeverity */
 /** @typedef {'bullying' | 'cheating' | 'disruptive_behavior' | 'fraud' | 'gambling' | 'harassment' | 'improper_uniform' | 'littering' | 'plagiarism' | 'prohibited_items' | 'vandalism' | 'other'} RecordViolation */
 

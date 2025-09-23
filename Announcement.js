@@ -20,7 +20,7 @@
  * 	content: string,
  * 	date: Date,
  * 	authors: (StaffAuthor | StudentAuthor)[],
- * 	archived?: Boolean,
+ * 	dismissed?: Boolean,
  * 	images: HTMLImageElement[]
  * }} AnnouncementProps
  */
@@ -37,7 +37,7 @@ class Announcement {
 		content = '',
 		date = new Date(),
 		authors = [],
-		archived = false
+		dismissed = false
 	}) {
 		this.id = id;
 		this.title = title;
@@ -46,7 +46,7 @@ class Announcement {
 		this.content = content;
 		this.date = date;
 		this.authors = authors;
-		this.archived = archived;
+		this.dismissed = dismissed;
 	};
 };
 

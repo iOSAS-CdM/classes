@@ -9,7 +9,7 @@
  *  email: string;
  *  role: 'head' | 'guidance' | 'prefect' | 'student-affairs';
  *  profilePicture: string;
- *  status: 'active' | 'restricted' | 'archived';
+ *  status: 'active' | 'restricted' | 'dismissed';
  *  reason?: string;
  * }} StaffProps
  */
