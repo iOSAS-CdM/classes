@@ -1,5 +1,17 @@
 /**
  * @typedef {{
+ *	eTag: string,
+ *	size: number,
+ *	mimetype: string,
+ *	cacheControl: string,
+ *	lastModified: string,
+ *	contentLength: number,
+ *	httpStatusCode: number
+ * }} Metadata
+ */
+
+/**
+ * @typedef {{
  * 	id: string,
  * 	name: string,
  * 	createdAt: Date,
