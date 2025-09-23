@@ -21,8 +21,7 @@
  * 		severity: RecordSeverity,
  * 		progress: 0 | 1 | 2 | 3 | 4 | 5
  * 	},
- * 	date: Date,
- * 	repository?: string
+ * 	date: Date
  * }} BaseRecordProps
  */
 
