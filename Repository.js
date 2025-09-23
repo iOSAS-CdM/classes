@@ -1,0 +1,24 @@
+/**
+ * @typedef {{
+ * 	id: string,
+ * 	name: string,
+ * 	createdAt: Date,
+ * 	updatedAt: Date,
+ * 	publicUrl: string
+ * }} File
+ */
+
+/**
+ * @typedef {File[]} RepositoryProps
+ */
+
+class Repository {
+	/**
+	 * @param {RepositoryProps} props
+	 */
+	constructor(props) {
+		this.files = props;
+	};
+};
+
+export default Repository;
