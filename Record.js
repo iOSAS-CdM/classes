@@ -31,7 +31,6 @@
  * 	complainees: string[],
  * 	author: string,
  * 	coauthors: string[],
- * 	repository?: string,
  * 	raw: true
  * }} RecordRaw
  */
@@ -65,7 +64,6 @@ class Record {
 		complainees,
 		author,
 		coauthors,
-		repository,
 		raw = false
 	}) {
 		this.id = id;
@@ -78,7 +76,6 @@ class Record {
 		this.complainees = complainees;
 		this.author = author;
 		this.coauthors = coauthors;
-		this.repository = repository;
 		this.raw = raw;
 	};
 };
