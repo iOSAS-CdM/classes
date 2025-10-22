@@ -19,8 +19,7 @@
  * 	cover: string,
  * 	content: string,
  * 	date: Date,
- * 	authors: (StaffAuthor | StudentAuthor)[],
- * 	dismissed?: Boolean,
+ * 	author: StaffAuthor | StudentAuthor,
  * 	images: HTMLImageElement[]
  * }} AnnouncementProps
  */
@@ -36,7 +35,7 @@ class Announcement {
 		cover = '/Placeholder Image.svg',
 		content = '',
 		date = new Date(),
-		authors = [],
+		author = null,
 		dismissed = false
 	}) {
 		this.id = id;
@@ -45,7 +44,7 @@ class Announcement {
 		this.cover = cover;
 		this.content = content;
 		this.date = date;
-		this.authors = authors;
+		this.author = author;
 		this.dismissed = dismissed;
 	};
 };
