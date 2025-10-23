@@ -1,15 +1,3 @@
-/**
- * @typedef {{
- * 	type: 'staff',
- * 	user: import('./Staff').default
- * }} StaffAuthor
- */
-/**
- * @typedef {{
- * 	type: 'student',
- * 	user: import('./Student').default
- * }} StudentAuthor
- */
 
 /**
  * @typedef {{
@@ -19,7 +7,7 @@
  * 	cover: string,
  * 	content: string,
  * 	date: Date,
- * 	author: StaffAuthor | StudentAuthor,
+ * 	author: import('./Staff').default | import('./Student').default | string,
  * 	images: HTMLImageElement[]
  * }} AnnouncementProps
  */
