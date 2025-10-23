@@ -8,7 +8,7 @@
  * 	content: string,
  * 	date: Date,
  * 	type: 'information' | 'event',
- * 	eventDate: Date | null,
+ * 	event_date: Date | null,
  * 	author: import('./Staff').default | import('./Student').default | string,
  * 	images: HTMLImageElement[]
  * }} AnnouncementProps
@@ -26,7 +26,7 @@ class Announcement {
 		content = '',
 		date = new Date(),
 		type = 'information',
-		eventDate = null,
+		event_date = null,
 		author = null,
 		dismissed = false
 	}) {
@@ -37,7 +37,7 @@ class Announcement {
 		this.content = content;
 		this.date = date;
 		this.type = type;
-		this.eventDate = eventDate;
+		this.event_date = event_date;
 		this.author = author;
 		this.dismissed = dismissed;
 	};
