@@ -7,6 +7,8 @@
  * 	cover: string,
  * 	content: string,
  * 	date: Date,
+ * 	type: 'information' | 'event',
+ * 	eventDate: Date | null,
  * 	author: import('./Staff').default | import('./Student').default | string,
  * 	images: HTMLImageElement[]
  * }} AnnouncementProps
@@ -23,6 +25,8 @@ class Announcement {
 		cover = '/Placeholder Image.svg',
 		content = '',
 		date = new Date(),
+		type = 'information',
+		eventDate = null,
 		author = null,
 		dismissed = false
 	}) {
@@ -32,6 +36,8 @@ class Announcement {
 		this.cover = cover;
 		this.content = content;
 		this.date = date;
+		this.type = type;
+		this.eventDate = eventDate;
 		this.author = author;
 		this.dismissed = dismissed;
 	};
