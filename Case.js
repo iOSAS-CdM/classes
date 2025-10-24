@@ -11,7 +11,7 @@
 /**
  * @typedef {{
  * 	attachments: import('./Repository').RepositoryProps[],
- * 	author: import('./Student').Student,
+ * 	author: import('./Student').StudentProps,
  * 	raw: false
  * }} CaseProcessed
  */
