@@ -18,6 +18,7 @@
  * 	profilePicture?: string,
  * 	status?: 'active' | 'restricted' | 'dismissed',
  * 	organizations?: import('./Organization').OrganizationProps[],
+ * 	ongoingCases?: number
  * }} BaseStudentProps
  */
 
@@ -42,7 +43,8 @@ class Student {
 		year,
 		profilePicture = '/Placeholder Image.svg',
 		status = 'active',
-		organizations = []
+		organizations = [],
+		ongoingCases = 0
 	}) {
 		this.name = name;
 		this.role = role;
@@ -55,6 +57,7 @@ class Student {
 		this.profilePicture = profilePicture;
 		this.status = status;
 		this.organizations = organizations;
+		this.ongoingCases = ongoingCases;
 	};
 };
 
