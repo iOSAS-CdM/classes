@@ -20,6 +20,7 @@
  * @typedef {{
  * 	id: number | string,
  * 	violation: CaseViolation,
+ * 	status: CaseStatus,
  * 	content: string
  * }} BaseCaseProps
  */
