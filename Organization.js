@@ -3,6 +3,7 @@
  * 	role: string,
  * 	id?: string,
  * 	student?: import('./Student').StudentProps
+ * 	publisher?: boolean
  * }} OrganizationMember
  */
 
