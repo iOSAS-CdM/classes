@@ -1,7 +1,8 @@
 /**
  * @typedef {{
  * 	role: string,
- * 	student: import('./Student').StudentProps
+ * 	id?: string,
+ * 	student?: import('./Student').StudentProps
  * }} OrganizationMember
  */
 
@@ -15,7 +16,7 @@
  * 	logo?: string,
  * 	cover?: string,
  * 	type?: 'college-wide' | 'institute-wide',
- * 	members?: OrganizationMember[],
+ * 	members?: OrganizationMember[]
  * }} Organization
  */
 
