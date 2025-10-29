@@ -35,7 +35,7 @@
 
 /**
  * @typedef {{
- * 	complainants: import('./Student').Student[],
+ * 	complainants: import('./Student').StudentProps[],
  * 	complainees: RecordComplainanee[],
  * 	raw: false
  * }} RecordProcessed
