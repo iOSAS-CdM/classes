@@ -29,8 +29,6 @@
  * @typedef {{
  * 	complainants: string[],
  * 	complainees: string[],
- * 	author: string,
- * 	coauthors: string[],
  * 	raw: true
  * }} RecordRaw
  */
@@ -39,8 +37,6 @@
  * @typedef {{
  * 	complainants: import('./Student').Student[],
  * 	complainees: RecordComplainanee[],
- * 	author: import('./Student').Staff,
- * 	coauthors: import('./Student').Staff[],
  * 	raw: false
  * }} RecordProcessed
  */
@@ -62,8 +58,6 @@ class Record {
 		date,
 		complainants,
 		complainees,
-		author,
-		coauthors,
 		raw = false
 	}) {
 		this.id = id;
@@ -74,8 +68,6 @@ class Record {
 		this.date = new Date(date);
 		this.complainants = complainants;
 		this.complainees = complainees;
-		this.author = author;
-		this.coauthors = coauthors;
 		this.raw = raw;
 	};
 };
