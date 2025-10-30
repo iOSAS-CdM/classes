@@ -13,7 +13,6 @@
  * 	},
  * 	role: 'student' | 'unverified-student',
  * 	email: string,
- * 	phone: string,
  * 	id: string,
  * 	profilePicture?: string,
  * 	status?: 'active' | 'restricted' | 'dismissed',
@@ -36,7 +35,6 @@ class Student {
 		name,
 		role,
 		email,
-		phone,
 		id,
 		institute,
 		program,
@@ -49,7 +47,6 @@ class Student {
 		this.name = name;
 		this.role = role;
 		this.email = email;
-		this.phone = phone;
 		this.id = id;
 		this.institute = institute;
 		this.program = program;
