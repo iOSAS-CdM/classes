@@ -11,6 +11,16 @@
  * 	event_date: Date | null,
  * 	author: import('./Staff').default | import('./Student').default | string,
  * 	images: HTMLImageElement[]
+ * 	likes: {
+ * 		author: import('./Student').default | string,
+ * 		date: Date
+ * 	}[],
+ * 	comments: {
+ * 		id: number | string,
+ * 		author: import('./Student').default | string,
+ * 		content: string,
+ * 		date: Date
+ * 	}[]
  * }} AnnouncementProps
  */
 
@@ -40,6 +50,8 @@ class Announcement {
 		this.event_date = event_date;
 		this.author = author;
 		this.dismissed = dismissed;
+		this.likes = [];
+		this.comments = [];
 	};
 };
 
