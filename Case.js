@@ -1,4 +1,4 @@
-/** @typedef {'open' | 'closed'} CaseStatus */
+/** @typedef {'open' | 'dismissed' | 'proceeded'} CaseStatus */
 /** @typedef {'bullying' | 'cheating' | 'disruptive_behavior' | 'fraud' | 'gambling' | 'harassment' | 'improper_uniform' | 'littering' | 'plagiarism' | 'prohibited_items' | 'vandalism' | 'other'} CaseViolation */
 
 /**
