@@ -10,6 +10,7 @@
  * 	type: 'information' | 'event',
  * 	event_date: Date | null,
  * 	author: import('./Staff').default | import('./Student').default | string,
+ * 	approved: boolean,
  * 	images: HTMLImageElement[]
  * 	likes: {
  * 		author: import('./Student').default | string,
@@ -38,6 +39,7 @@ class Announcement {
 		type = 'information',
 		event_date = null,
 		author = null,
+		approved = true,
 		dismissed = false
 	}) {
 		this.id = id;
@@ -49,6 +51,7 @@ class Announcement {
 		this.type = type;
 		this.event_date = event_date;
 		this.author = author;
+		this.approved = approved;
 		this.dismissed = dismissed;
 		this.likes = [];
 		this.comments = [];
